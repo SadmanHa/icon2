@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(39, 40, 39);
+    height: 100vh;
+}
+
+.icon ul {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.icon ul li {
+    margin: 0px 15px;
+}
+.icon ul li a {
+    display: block;
+    width: 100px;
+    height: 39px;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+
+.icon ul li:nth-child(1) a{
+    color: #1da1f2;
+    box-shadow:0px 0px 20px #0b598a ;
+}
+.icon ul li:nth-child(2) a{
+    color: #43609c;
+    width: 110px;
+    box-shadow:0px 0px 20px #30456e ;
+    
+}
+.icon ul li:nth-child(3) a{
+    box-shadow:0px 0px 20px rgb(74, 146, 58) ;
+    color: rgb(120, 211, 100);
+    width: 120px;
+}
+.icon ul li:nth-child(4) a{
+    box-shadow:0px 0px 20px rgb(145, 42, 42);
+    color: rgb(209, 83, 84);
+    width: 110px;
+}
+
+.icon ul li:nth-child(5) a{
+    box-shadow:0px 0px 20px rgb(105, 123, 138) ;
+    color: rgb(171, 183, 193);
+}
+.icon ul li:nth-child(6) a{
+    box-shadow:0px 0px 20px rgb(196, 76, 29);
+    color: rgb(235, 98, 45);
+}
+.icon ul li a:hover {
+    color: white;
+}
+.icon ul li a .icons {
+    font-size: 21px;
+    text-decoration: none;
+    padding-right: 10px;
+    transform: translate(0px,6px);
+    display: inline-block;
+    
+}
+.icon ul li a .icone-text {
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    transform: translate(0px,4px);
+    display:inline-block ;
+    
+}
+.icon ul li a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    border-radius: 4px;
+    transition: 0.5s;
+
+}
+.icon ul li a:hover::before {
+
+    height: 100%;
+
+}
+.icon ul li:nth-child(1) a:hover::before {
+    background-color:#1da1f2 ;
+}
+.icon ul li:nth-child(2) a:hover::before {
+    background-color: #43609c;
+}
+.icon ul li:nth-child(3) a:hover::before {
+    background-color:rgb(120, 211, 100) ;
+}
+.icon ul li:nth-child(4) a:hover::before {
+    background-color: rgb(209, 83, 84);
+}
+.icon ul li:nth-child(5) a:hover::before {
+    background-color:rgb(171, 183, 193) ;
+}
+.icon ul li:nth-child(6) a:hover::before {
+    background-color:rgb(235, 98, 45) ;
+}
+
+
